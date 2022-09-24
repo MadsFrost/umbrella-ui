@@ -1,0 +1,46 @@
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  require('react-app-polyfill/ie11');
+  var _react = require('react');
+  var _reactDom = require('react-dom');
+  var _umbrellaUi = require('umbrella-ui');
+  require('umbrella-ui/dist/tailwind.css');
+  var _jsxFileName = "C:\\Users\\madsa\\OneDrive\\Skrivebord\\umbrella-ui\\example\\index.tsx";
+  const App = () => {
+    const [enabled, setEnabled] = _react.useState(false);
+    return (
+      /*#__PURE__*/_react.createElement("div", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_react.createElement(_umbrellaUi.ToggleSwitch, {
+        enabled: true,
+        onChange: value => alert(value),
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 7
+        }
+      }))
+    );
+  };
+  _reactDom.render(/*#__PURE__*/_react.createElement(App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 17
+    }
+  }), document.getElementById('root'));
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

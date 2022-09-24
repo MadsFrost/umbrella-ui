@@ -20,7 +20,15 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ToggleSwitchProps> = (args) => <ToggleSwitch {...args} />;
+const Template: Story<ToggleSwitchProps> = (args) => {
+  const [isEnabled, setEnabled] = React.useState(args.enabled);
+  React.useEffect(() => {
+    setEnabled(args.enabled);
+  }, [args.enabled])
+
+  return <ToggleSwitch onChange={(value) => setEnabled(value)} enabled={isEnabled} />
+
+}
 
 export const Default = Template.bind({});
 Default.args = {

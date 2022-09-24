@@ -1293,7 +1293,7 @@
 
 "@headlessui/react@^1.7.2":
   version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.2.tgz#e6a6a8d38342064a53182f1eb2bf6d9c1e53ba6a"
+  resolved "https://registry.npmjs.org/@headlessui/react/-/react-1.7.2.tgz"
   integrity sha512-snLv2lxwsf2HNTOBNgHYdvoYZ3ChJE8QszPi1d/hl9js8KrFrUulTaQBfSyPbJP5BybVreWh9DxCgz9S0Z6hKQ==
 
 "@hypnosphi/create-react-context@^0.3.1":
@@ -1953,7 +1953,7 @@
 
 "@storybook/addon-postcss@^2.0.0":
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-postcss/-/addon-postcss-2.0.0.tgz#ec61cb9bb2662f408072b35c466c7df801c28498"
+  resolved "https://registry.npmjs.org/@storybook/addon-postcss/-/addon-postcss-2.0.0.tgz"
   integrity sha512-Nt82A7e9zJH4+A+VzLKKswUfru+T6FJTakj4dccP0i8DSn7a0CkzRPrLuZBq8tg4voV6gD74bcDf3gViCVBGtA==
   dependencies:
     "@storybook/node-logger" "^6.1.14"
@@ -2561,7 +2561,7 @@
 
 "@storybook/react@^6.5.12":
   version "6.5.12"
-  resolved "https://registry.npmjs.org/@storybook/react/-/react-6.5.12.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.5.12.tgz#0c6b02a583f478ace6cd957a358d84a728a8d232"
   integrity sha512-1tG8EdSfp+OZAKAWPT2UrexF4o007jEMwQFFXw1atIQrQOADzSnZ7lTYJ08o5TyJwksswtr18tH3oJJ9sG3KPw==
   dependencies:
     "@babel/preset-flow" "^7.12.1"
@@ -4691,6 +4691,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 clean-css@^4.2.3:
   version "4.2.4"

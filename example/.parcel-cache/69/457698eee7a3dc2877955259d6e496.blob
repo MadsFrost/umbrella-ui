@@ -1,0 +1,6 @@
+"use strict";
+if ("development" === 'production') {
+  module.exports = require('./headlessui.prod.cjs');
+} else {
+  module.exports = require('./headlessui.dev.cjs');
+}
