@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "umbrella-ui": "2.0.3"
+    "umbrella-ui": "^2.0.4"
   },
   "alias": {
     "react": "../node_modules/react",

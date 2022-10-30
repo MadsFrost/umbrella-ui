@@ -3,4 +3,3 @@ export type PartialRecord<K extends keyof any, T> = {
   };
 export * from './SharedProps';
 export * from './Theme';
-export * from './Colors';

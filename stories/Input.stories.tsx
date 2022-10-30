@@ -15,23 +15,16 @@ const meta: Meta = {
         type: 'boolean'
     }
   }
-  /* 
-     className: {
-        defaultValue: 'bg-pink-400 text-white placeholder:text-white',
-        type: 'string'
-    }
-  */
 };
 
 export default meta;
 
-const Template: Story<InputProps> = (args) => {
+const Template: Story<InputProps> = (args: InputProps) => {
   return <Input {...args} />
 
 }
 
 export const Default = Template.bind({});
 Default.args = {
-    disabled: false,
-    className: ''
+    disabled: false
 };

@@ -5977,10 +5977,10 @@ typescript@^3.4.5:
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.9.10.tgz"
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
-umbrella-ui@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/umbrella-ui/-/umbrella-ui-2.0.3.tgz#bbbe4793e2b88948806a286eff9b277dc5fd4113"
-  integrity sha512-rxB5eKGz6kU7r/Z548GeiJ/ZInzSlve6Vd3uEfVa/V/zfgKHqBjR0tHFwGt4nTS2jDL+nAMtwbHvjXPDH79wqg==
+umbrella-ui@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/umbrella-ui/-/umbrella-ui-2.0.4.tgz#98fc78f94a2a7ca286eb4c32e371c66b2bd25aa2"
+  integrity sha512-BuAL8+b7FMQMQ5XrRrxrqa7oa/sy5Y2MkpendQrQgdE2+ShxIkaf7/uCA2oEywvgzZHdoaQe1T/+BHpPFwp/pA==
   dependencies:
     "@headlessui/react" "^1.7.2"
     classnames "^2.3.2"

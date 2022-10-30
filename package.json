@@ -1,5 +1,5 @@
 {
-  "version": "2.0.3",
+  "version": "2.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -75,6 +75,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.2",
-    "classnames": "^2.3.2"
+    "classnames": "^2.3.2",
+    "hamburger-react": "^2.5.0",
+    "react-hook-form": "^7.38.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-skeleton": "^3.1.0",
+    "recharts": "^2.1.16"
   }
 }
