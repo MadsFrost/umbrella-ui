@@ -6,18 +6,30 @@ Congrats! You just saved yourself hours of work by bootstrapping this library. T
 
 > If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
 
-## Components
-### Control
+# Typescript Support
+The library focuses on having TypeScript support and make use of well-defined properties.
+
+# Installation
+> NPM
+```
+npm install umbrella-ui --save
+```
+> Yarn
+```
+yarn add umbrella-ui
+```
+# Components
+## Control
 - [x] Button with variants
 - [x] Card with children
 - [x] Input
 - [x] Toggle
-### Layout
+## Layout
 - [x] Flex container
 - [x] Grid with GridElements
-### Typography
+## Typography
 - [x] Keyboard shortcut visual
-### Loading/Placeholders
+## Loading/Placeholders
 - [x] Example loaders such as DNA loader and other cool animations.
 - [x] Progress Bar
 - [x] Skeleton Loader
