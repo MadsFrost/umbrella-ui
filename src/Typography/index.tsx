@@ -1,15 +1,15 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-export type HeadingElement = 'h1' | 'h2' | 'h3' | 'h4';
-export type TextElement =
+type HeadingElement = 'h1' | 'h2' | 'h3' | 'h4';
+type TextElement =
   | 'label'
   | 'span'
   | 'p'
   | 'div'
   | 'li'
   | HeadingElement;
-export type TextVariant =
+type TextVariant =
   | 'body'
   | 'body-small'
   | 'label'

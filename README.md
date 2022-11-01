@@ -18,6 +18,39 @@ npm install umbrella-ui --save
 ```
 yarn add umbrella-ui
 ```
+
+# Example Usage
+## App Root
+Import the library css file to the app root:
+```js
+import 'umbrella-ui/dist/tailwind.css';
+```
+## Component usage
+Example of `<Card>` component.
+```jsx
+import { Card } from 'umbrella-ui';
+const CustomHeader = () => {
+    return (
+        <div>Hi, I'm a card header prop.</div>
+    )
+}
+
+const CustomFooter = () => {
+    return (
+        <div>Hi I'm a card footer prop.</div>
+    )
+}
+
+const CustomCard = () => {
+    return (
+        <Card header={<CustomHeader />} footer={<CustomFooter />}>
+            Hi I'm the content in the card
+        </Card>
+    )
+}
+
+export default CustomCard;
+```
 # Components
 ## Control
 - [x] Button with variants

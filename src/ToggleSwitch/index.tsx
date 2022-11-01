@@ -4,13 +4,14 @@ import { Switch } from '@headlessui/react';
 export interface ToggleSwitchProps {
   enabled: boolean;
   onChange: (value: boolean) => void;
+  className?: string;
 }
 
-export const ToggleSwitch = ({ enabled, onChange }: ToggleSwitchProps) => (
+export const ToggleSwitch = ({ enabled, onChange, className }: ToggleSwitchProps) => (
   <Switch
     checked={enabled}
     onChange={onChange}
-    className={`${enabled ? 'bg-green-500' : 'bg-gray-400'}
+    className={`${enabled ? 'bg-green-500' : 'bg-gray-400'} ${className}
           relative inline-flex flex-shrink-0 h-7 w-14 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
   >
     <span className="sr-only">Use setting</span>

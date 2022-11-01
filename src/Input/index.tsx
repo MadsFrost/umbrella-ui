@@ -2,8 +2,20 @@ import * as React from 'react';
 import classNames from 'classnames';
 
 export interface InputProps {
+  /**
+   * Add Icon to left side of input.
+   * Default: 'undefined'
+   */
   iconLeft?: React.ReactNode;
+  /**
+   * Add Icon to right side of input.
+   * Default: 'undefined'
+   */
   iconRight?: React.ReactNode;
+  /**
+   * Add Icon to right side of input.
+   * Default: 'undefined'
+   */
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   type?:
     | 'text'
@@ -67,7 +79,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <div className={classNames({ 'flex-grow': fullWidth })}>
         <div
           className={classNames(
-            'relative flex transition outline-none p-1 ring-1 ring-inset',
+            'relative bg-red-500 flex transition outline-none p-1 ring-1 ring-inset',
             {
               'w-full': fullWidth,
               'ring-neutral-400 text-neutral-400': inputProps.disabled,

@@ -20,6 +20,11 @@ export interface IconProps {
    * svg content without the svg tag
    */
   children: React.ReactNode;
+  /**
+   * className
+   * Default: undefined
+   */
+  className?: string;
 }
 
 /**
@@ -31,6 +36,7 @@ export interface IconProps {
 
 export const Icon = React.forwardRef<SVGSVGElement, IconProps>((props, ref) => {
   const {
+    className,
     children,
     size = 'medium',
     title,
@@ -44,7 +50,7 @@ export const Icon = React.forwardRef<SVGSVGElement, IconProps>((props, ref) => {
       aria-hidden={title ? undefined : true}
       role={title ? 'img' : undefined}
       viewBox={viewBox}
-      className={classNames('fill-current', {
+      className={`${className} ${classNames('fill-current', {
         ['h-3 w-3']: size === 'small',
         ['h-4 w-4']: size === 'medium',
         ['h-5 w-5']: size === 'large',
@@ -54,7 +60,7 @@ export const Icon = React.forwardRef<SVGSVGElement, IconProps>((props, ref) => {
         ['text-success-light']: color === 'success',
         ['text-error-light']: color === 'error',
         ['text-neutral-600']: color === 'disabled',
-      })}
+      })}`}
     >
       {children}
       {title ? <title>{title}</title> : null}
